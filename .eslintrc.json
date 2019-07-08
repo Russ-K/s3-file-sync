@@ -1,0 +1,116 @@
+{
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "rules": {
+        ////////// Possible Errors //////////
+
+        "no-console": "off",
+        "no-extra-parens": ["error", "all", { "nestedBinaryExpressions": false }],
+        "no-template-curly-in-string": "error",
+        "require-atomic-updates": "error",
+
+        ////////// Best Practices //////////
+
+        "block-scoped-var": "warn",
+        "curly": ["error", "all"],
+        "eqeqeq": ["error", "always"],
+        "no-div-regex": "error",
+        "no-eq-null": "error",
+        "no-eval": "warn",
+        "no-extend-native": "error",
+        "no-floating-decimal": "warn",
+        "no-implied-eval": "warn",
+        "no-lone-blocks": "warn",
+        "no-magic-numbers": "off",
+        "no-new-func": "error",
+        "no-new-wrappers": "error",
+        "no-new": "error",
+        "no-param-reassign": ["error", { "props": false }],
+        "no-proto": "error",
+        "no-return-assign": "error",
+        "no-return-await": "error",
+        "no-script-url": "error",
+        "no-self-compare": "error",
+        "no-sequences": "error",
+        "no-throw-literal": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-unused-expressions": "error",
+        "no-useless-call": "error",
+        "no-useless-catch": "error",
+        "no-useless-concat": "error",
+        "no-useless-return": "error",
+        "prefer-promise-reject-errors": "error",
+        "yoda": "error",
+
+        ////////// Variables //////////
+
+        "no-shadow-restricted-names": "error",
+        "no-shadow": "error",
+        "no-undef-init": "error",
+        "no-use-before-define": ["error", "nofunc"],
+
+        ////////// Node.js //////////
+
+        "global-require": "error",
+        "no-mixed-operators": "error",
+        "no-new-require": "error",
+        "no-process-env": "off",
+        "no-process-exit": "error",
+        "no-sync": "warn",
+
+        ////////// Stylistic Issues //////////
+
+        "block-spacing": "error",
+        "brace-style": "error",
+        "comma-dangle": ["error", "never"],
+        "id-match": ["off", "^([a-z]+([A-Z][a-z]+)*)|([A-Z]+)$"], //this doesn't work for classes starting with a capital
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "jsx-quotes": ["error", "prefer-single"],
+        "keyword-spacing": ["error", { "after": true, "before": true }],
+        "lines-between-class-members": ["warn", "always"],
+        "max-len": ["error", { "code": 120 }],
+        "no-lonely-if": "error",
+        "no-new-object": "error",
+        "no-tabs": "error",
+        "no-trailing-spaces": "error",
+        "no-unneeded-ternary": "error",
+        "object-curly-newline": ["error", { "consistent": true }],
+        "object-curly-spacing": ["error", "always", { "arraysInObjects": false }],
+        "object-property-newline": "error",
+        "padded-blocks": ["error", "never"],
+        "quotes": ["error", "single"],
+        "semi-spacing": "error",
+        "semi-style": ["error", "last"],
+        "semi": ["error", "always"],
+        "space-before-blocks": "error",
+        "space-before-function-paren": ["error", "never"],
+        "space-in-parens": ["warn", "never"],
+        "space-infix-ops": "error",
+        "space-unary-ops": "error",
+        "switch-colon-spacing": "error",
+        "template-tag-spacing": "error",
+        "unicode-bom": "error",
+
+        ////////// ECMAScript 6 //////////
+
+        "no-confusing-arrow": "error",
+        "no-duplicate-imports": ["error", { "includeExports": true }],
+        "no-useless-computed-key": "error",
+        "no-useless-constructor": "error",
+        "no-useless-rename": "error",
+        "no-var": "warn",
+        "prefer-const": ["error", {"destructuring": "all"}],
+        "symbol-description": "error",
+        "template-curly-spacing": "error"
+    }
+}
